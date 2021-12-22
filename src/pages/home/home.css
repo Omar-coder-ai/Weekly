@@ -1,0 +1,6 @@
+.home {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+  border: 1px solid blue;
+}
