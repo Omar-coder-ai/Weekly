@@ -1,95 +1,91 @@
-.top {
+.topbar {
+  display: flex;
+  padding: 25px;
+  gap: 25px;
+  align-items: center;
+}
+
+.topbar img {
   width: 100%;
-  height: 100px;
-  background-color: white;
-  position: sticky;
-  top: 0;
-  display: flex;
-  align-items: center;
-  z-index: 999;
-  border: 1px solid #ccc;
+  height: 25px;
 }
 
-.topLeft > img {
-  max-width: 100%;
-  object-fit: contain;
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-.topLeft,
-.topRight {
-  flex: 3;
-  display: flex;
-  height: 100px;
-  align-items: center;
-  justify-content: center;
-  border-right: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-}
-
-.topIcon {
-  font-size: 20px;
-  margin-right: 10px;
-  color: #444;
-  cursor: pointer;
-}
-
-.topCenter {
-  flex: 6;
-
-  width: 50%;
-  margin: 0 auto;
-}
-
-.topList {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.topListItem {
-  margin-right: 20px;
-  font-size: 18px;
-  font-weight: 400;
-  cursor: pointer;
-}
-
-.topListItem:hover {
-  color: #df00ff;
-}
-
-.topImg {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-right: 15px;
-  cursor: pointer;
-}
-
-.topSearchIcon {
-  font-size: 18px;
-  color: #666;
-  cursor: pointer;
-}
-
-.link {
-  text-decoration: none;
-  font-weight: 400;
-}
-
-.link:hover {
-  color: #df00ff;
-}
-
-.claim {
-  font-style: italic;
-  font-weight: 200;
-  font-size: 14px;
+.dropdown-content {
+  display: none;
+  background: white;
   position: absolute;
+  padding: 15px;
+  left: -25px;
+  width: 100vw;
+  height: 100vh;
 }
 
-.topIcon {
-  margin-top: 50px;
+.dropdown.open .dropdown-content {
+  display: block;
+}
+
+.dropdown-content > a,
+.dropdown-content > p {
+  display: block;
+  margin: 0 0 40px 0;
+  padding: 10px;
+}
+
+.dropdown-content > i {
+  margin-right: 25px;
+}
+
+@media (min-width: 768px) {
+  .topbar {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .dropdown {
+    flex-grow: 2;
+  }
+
+  .dropdown-content {
+    display: flex;
+    justify-content: space-between;
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+
+  .dropdown-content > a,
+  .dropdown-content > p {
+    font-size: 20px;
+    font-family: LarkenBold;
+    margin: 0;
+  }
+
+  .dropdown-content > i {
+    margin: 0;
+  }
+
+  .rightCorner > p {
+    font-size: 20px;
+    font-family: LarkenLight;
+    font-style: italic;
+    color: #3c5164;
+    margin: 0;
+    padding: 5px;
+  }
+  .rightCorner > i {
+    margin-right: 25px;
+    margin-left: auto;
+    float: right;
+    padding-block: 10px;
+  }
 }

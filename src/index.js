@@ -3,6 +3,10 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import "./fonts/Larken-Regular.ttf";
+import "./fonts/Larken-Bold.ttf";
+import "./fonts/Larken-Black.ttf";
+import "./fonts/Larken-Light.ttf";
 
 ReactDOM.render(
   <React.StrictMode>

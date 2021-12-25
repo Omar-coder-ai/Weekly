@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #3c5164;
+  color: white;
+  position: relative;
+  padding-top: 3em;
+  bottom: 0;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.footer-info-center > i {
+  margin-left: 25px;
+}
+
+.footer-info-right > img {
+  width: 80%;
+  height: 60px;
+}

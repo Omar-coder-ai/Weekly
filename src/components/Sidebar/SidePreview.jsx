@@ -10,7 +10,7 @@ export default function sidePreview() {
             
             <div className="text">
             <div className="meta">
-                <div className="cat"> Medicina - </div>
+                <div className="cat"> Ambiente  </div>
                 <div className="previewDate"> 2 ore fa</div>
             </div>
             <div className="previewTitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </div>
