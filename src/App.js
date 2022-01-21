@@ -9,8 +9,14 @@ function App() {
   return (
     <Router>
       <Topbar />
-      <Home />
-      <Footer />
+      <Switch>
+        <Route component={Home} path="/" exact />
+        <Route component={Attualitaepolitica} path="/attualitaepolitica" />
+        <Route component={Internazionale} path="/internazionale" />
+        <Route component={Societa} path="/societa" />
+        <Route component={Ambiente} path="/ambiente" />
+        <Route component={Profili} path="/profili" />
+      </Switch>
     </Router>
   );
 }

@@ -10,10 +10,12 @@ function Footer() {
             <section className='footer-info-left'>
                     <p>Pagine:</p>
                     <span>
-                    <li>Storie</li>
-                    <li>A sud del mondo</li>
-                    <li>Cultura & Società</li>
-                    <li>La redazione</li>
+                    <li>Attualità e Politica</li>
+                    <li>Internazionale</li>
+                    <li>Società</li>
+                    <li>Ambiente</li>
+                    <li>Profili</li>
+
                     </span>
                 
                 </section>
@@ -28,7 +30,7 @@ function Footer() {
                     <span>
                         <li>Contatti</li>
                         <li>info@weebly.it</li>
-                        <li>Scrivi alla redazione</li>
+                        <li><a href="mailto:@.com?su">Scrivi alla redazione</a></li>
                     </span>
                    
                 </section>

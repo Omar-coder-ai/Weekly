@@ -1,0 +1,11 @@
+.home {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}

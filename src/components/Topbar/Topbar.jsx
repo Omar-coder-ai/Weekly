@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./topbar.css";
-import logo from "../../images/Weekly_logo_colore.png"
+import logo from "../../images/Weekly_logo_colore_Weekly_logo_colore.png"
 
 function toggle (current) {
   return !current
@@ -14,13 +14,23 @@ export default function Topbar() {
   ] = useState(false)
   const dropdownContent = (
     <div className='dropdown-content'>
-      {/* <Link to="/">
-        Storie
-      </Link> */}
-      <p>Storie</p>
-      <p>A sud del mondo</p>
-      <p>Cultura & Società</p>
-      <p>La redazione</p>
+      <NavLink to="/attualitaepolitica">
+        Attualità e Politica
+      </NavLink>
+      <NavLink to="/internazionale">
+        Internazionale
+      </NavLink>
+      <NavLink to="/societa">
+        Società
+      </NavLink>
+      <NavLink to="/ambiente">
+        Ambiente
+      </NavLink>
+      <NavLink to="/ambiente">
+        Profili
+      </NavLink>
+      
+
       {/* <Link to="/write">
         La redazione
       </Link> */}
@@ -50,9 +60,9 @@ export default function Topbar() {
           />
           {dropdownContent}
         </div>
-        <Link to="/">
+        <NavLink to="/">
           <img src={logo} alt="WEEKLY.it" />
-        </Link>
+        </NavLink>
       </div>
     </div>
   );
