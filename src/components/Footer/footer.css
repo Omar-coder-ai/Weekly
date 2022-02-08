@@ -14,15 +14,49 @@
 .container {
   display: flex;
   list-style: none;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 90%;
 }
 
-.footer-info-center > i {
-  margin-left: 25px;
+.footer-info-center1 {
+  max-width: 200px;
+}
+.footer-info-center2 > a {
+  padding-left: 0.6em;
+}
+.footer-info-center2 {
+  margin-bottom: 15;
 }
 
 .footer-info-right > img {
   width: 80%;
   height: 60px;
+}
+
+.noDecoration > a:link,
+a:visited {
+  text-decoration: none !important;
+  font-weight: 500;
+  color: inherit;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+  font-weight: none;
+}
+
+.informativa {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-info-right > img {
+    width: 160px;
+    height: 60px;
+  }
 }

@@ -19,18 +19,24 @@ function Footer() {
                     </span>
                 
                 </section>
-                <section className='footer-info-center'>
+                <section className='footer-info-center1'>
+                    <p className='informativa'>INFORMATIVA</p>
+                    <p>Tutti i contenuti di WeeklyWeb possono essere utilizzati da altre testate o siti internet è molto gradito in caso citare la fonte con un link (follow) o collegamento visibile a weeklyweb.it e alla pagina dell'articolo.</p>
+
+                </section>
+                <section className='footer-info-center2'>
                     <p>Seguici su: </p>
-                    <i className="fab fa-facebook-square fa-3x"></i>
-                    <i className="fab fa-instagram fa-3x"></i>
+                    <a href="https://facebook.com"><i className="fab fa-facebook-square fa-4x"></i></a>
+                    <a href="https://instagram.com"><i className="fab fa-instagram fa-4x"></i></a>
                 </section>
 
                 <section className='footer-info-right'>
-                    <img src={logo} alt="WEEKLY.it" />
+                    <img src={logo} alt="WEEKLYWEB.it" />
                     <span>
                         <li>Contatti</li>
-                        <li>info@weebly.it</li>
-                        <li><a href="mailto:@.com?su">Scrivi alla redazione</a></li>
+                        <li>info@weeblyweb.it</li>
+                        <li><a href="mailto:redazione@weeklyweb.it?">Scrivi alla redazione</a></li>
+                        <a href="https://pluralsight.com">Disclaimer</a>
                     </span>
                    
                 </section>
@@ -40,7 +46,7 @@ function Footer() {
             
             
             
-            <p>&copy;{new Date().getFullYear()} Weekly.it | Tutti i diritti sono riservati | Privacy | Condizioni di utilizo</p>
+            <p>&copy;{new Date().getFullYear()} Weeklyweb.it | Tutti i diritti sono riservati | Privacy | Condizioni di utilizo</p>
         </section>
     )
 }

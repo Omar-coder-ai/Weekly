@@ -1,5 +1,7 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import "./App.css";
+
 import Header from "./components/Header/Header";
 import Topbar from "./components/Topbar/Topbar";
 import Home from "./pages/home/Home";
@@ -14,14 +16,14 @@ function App() {
   return (
     <Router>
       <Topbar />
-      <Switch>
-        <Route component={Home} path="/" exact />
-        <Route component={Attualitaepolitica} path="/attualitaepolitica" />
-        <Route component={Internazionale} path="/internazionale" />
-        <Route component={Societa} path="/societa" />
-        <Route component={Ambiente} path="/ambiente" />
-        <Route component={Profili} path="/profili" />
-      </Switch>
+      <Routes>
+        <Route element={<Home />} path="/" exact />
+        <Route element={<Attualitaepolitica />} path="/attualitaepolitica" />
+        <Route element={<Internazionale />} path="/internazionale" />
+        <Route element={<Societa />} path="/societa" />
+        <Route element={<Ambiente />} path="/ambiente" />
+        <Route element={<Profili />} path="/profili" />
+      </Routes>
       <Footer />
     </Router>
   );

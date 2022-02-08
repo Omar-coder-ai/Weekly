@@ -14,19 +14,19 @@ export default function Topbar() {
   ] = useState(false)
   const dropdownContent = (
     <div className='dropdown-content'>
-      <NavLink to="/attualitaepolitica">
+      <NavLink to="/attualitaepolitica" className="inactive" activeClassName="active">
         Attualità e Politica
       </NavLink>
-      <NavLink to="/internazionale">
+      <NavLink to="/internazionale" className="inactive" activeClassName="active">
         Internazionale
       </NavLink>
-      <NavLink to="/societa">
+      <NavLink to="/societa" className="inactive" activeClassName="active">
         Società
       </NavLink>
-      <NavLink to="/ambiente">
+      <NavLink to="/ambiente" className="inactive" activeClassName="active">
         Ambiente
       </NavLink>
-      <NavLink to="/ambiente">
+      <NavLink to="/profili" className="inactive" activeClassName="active"> 
         Profili
       </NavLink>
       
@@ -61,7 +61,7 @@ export default function Topbar() {
           {dropdownContent}
         </div>
         <NavLink to="/">
-          <img src={logo} alt="WEEKLY.it" />
+          <img src={logo} alt="WEEKLYweb.it" />
         </NavLink>
       </div>
     </div>
